@@ -1,0 +1,99 @@
+:root {
+    --blakc: #030616;
+    --azul: #4E80EE;
+    --grid: #D2D5DA;
+    --blanco-1: #F8FAFC;
+    --blanco: #FFFFFF;
+}
+
+.wrapper {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--blanco-1);
+}
+
+main {
+    padding-top: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--blakc);
+}
+
+.hr {
+    margin: 2rem 0;
+    border: 1px solid var(--grid);
+}
+
+/* estilos header */
+.header {
+    width: 100%;
+    padding: 5rem 0;
+    text-align: center;
+    background-color: var(--blanco);
+}
+
+.header-h1 {
+    margin-bottom: 1.6rem;
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+/* articulos */
+.article {
+    padding: 1.3rem 0;
+}
+
+.article-h2 {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+}
+
+.article-p {
+    margin-bottom: 2rem;
+}
+
+.article-ol {
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+.article-ul {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.article-ol,
+.article-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.article-ol li span {
+    color: var(--azul);
+}
+
+.article-ul li span {
+    font-weight: bold;
+}
+
+.article-text-f span {
+    color: var(--azul);
+}
+
+@media screen and (min-width: 1080px){
+    main {
+        padding-top: 5rem;
+    }
+
+    .header {
+        padding: 8rem 0;
+    }
+}
